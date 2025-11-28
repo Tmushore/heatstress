@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/app/scripts/statistical_heat_stress_characterization.py", line 19, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'

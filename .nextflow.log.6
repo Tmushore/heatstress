@@ -1,0 +1,113 @@
+Nov-26 12:34:16.509 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflow/main.nf
+Nov-26 12:34:16.781 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.0
+Nov-26 12:34:16.886 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /mnt/c/Users/user/containerisation/workflow/nextflow.config
+Nov-26 12:34:16.899 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/c/Users/user/containerisation/workflow/nextflow.config
+Nov-26 12:34:16.982 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Nov-26 12:34:17.808 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/terrence/.nextflow/plugins; core-plugins: nf-amazon@3.4.1,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.3,nf-k8s@1.2.2,nf-tower@1.17.1,nf-wave@1.16.1
+Nov-26 12:34:17.882 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-26 12:34:17.895 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-26 12:34:17.904 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Nov-26 12:34:17.933 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Nov-26 12:34:18.348 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-26 12:34:18.351 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-26 12:34:18.352 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Nov-26 12:34:18.371 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/terrence/.nextflow/secrets/store.json
+Nov-26 12:34:18.375 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4397a639] - activable => nextflow.secret.LocalSecretsProvider@4397a639
+Nov-26 12:34:18.402 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Nov-26 12:34:18.427 [main] DEBUG nextflow.cli.CmdRun - Launching `workflow/main.nf` [wise_raman] DSL2 - revision: 7805e7183f
+Nov-26 12:34:21.067 [main] DEBUG nextflow.Session - Session UUID: dc587ca5-b000-4f82-8df9-156594484777
+Nov-26 12:34:21.068 [main] DEBUG nextflow.Session - Run name: wise_raman
+Nov-26 12:34:21.070 [main] DEBUG nextflow.Session - Executor pool size: 12
+Nov-26 12:34:21.086 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Nov-26 12:34:21.102 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Nov-26 12:34:21.150 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.0 build 10289
+  Created: 22-10-2025 16:26 UTC (18:26 CAST)
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 17.0.17+10-Ubuntu-124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 3341@DESKTOP-40I9I50 [127.0.1.1]
+  CPUs: 12 - Mem: 23.3 GB (19.3 GB) - Swap: 6 GB (6 GB)
+Nov-26 12:34:21.237 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/user/containerisation/work [v9fs]
+Nov-26 12:34:21.241 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/Users/user/containerisation/workflow/bin
+Nov-26 12:34:21.254 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-26 12:34:21.272 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Nov-26 12:34:21.281 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Nov-26 12:34:21.352 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-26 12:34:21.369 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Nov-26 12:34:21.549 [main] DEBUG nextflow.Session - Session start
+Nov-26 12:34:21.990 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-26 12:34:22.255 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DAILY_STATS` matches process DAILY_STATS
+Nov-26 12:34:22.295 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Nov-26 12:34:22.297 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-26 12:34:22.328 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-26 12:34:22.342 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=23.3 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Nov-26 12:34:22.352 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-26 12:34:22.424 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'DAILY_STATS': maxForks=0; fair=false; array=0
+Nov-26 12:34:22.543 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CHARACTERIZE` matches process CHARACTERIZE
+Nov-26 12:34:22.551 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Nov-26 12:34:22.553 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-26 12:34:22.556 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'CHARACTERIZE': maxForks=0; fair=false; array=0
+Nov-26 12:34:22.565 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: CHARACTERIZE, DAILY_STATS
+Nov-26 12:34:22.574 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Nov-26 12:34:22.590 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DAILY_STATS
+Nov-26 12:34:22.593 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CHARACTERIZE
+Nov-26 12:34:22.597 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_d0e4eac063281667: /mnt/c/Users/user/containerisation/workflow/main.nf
+Nov-26 12:34:22.598 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: ./data/; pattern: *; options: [:]
+Nov-26 12:34:22.599 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-26 12:34:22.600 [main] DEBUG nextflow.Session - Session await
+Nov-26 12:34:23.101 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-26 12:34:23.109 [Task submitter] INFO  nextflow.Session - [9c/0bdacc] Submitted process > DAILY_STATS (1)
+Nov-26 12:34:25.049 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: DAILY_STATS (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/user/containerisation/work/9c/0bdacc4b02c6c672b16c39e1684ec3]
+Nov-26 12:34:25.054 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Nov-26 12:34:25.122 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Nov-26 12:34:25.207 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-26 12:34:25.210 [Task submitter] INFO  nextflow.Session - [4b/218c61] Submitted process > CHARACTERIZE (1)
+Nov-26 12:34:26.830 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: CHARACTERIZE (1); status: COMPLETED; exit: 1; error: -; workDir: /mnt/c/Users/user/containerisation/work/4b/218c615a18f754dd9555ecc4098cb8]
+Nov-26 12:34:26.842 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=CHARACTERIZE (1); work-dir=/mnt/c/Users/user/containerisation/work/4b/218c615a18f754dd9555ecc4098cb8
+  error [nextflow.exception.ProcessFailedException]: Process `CHARACTERIZE (1)` terminated with an error exit status (1)
+Nov-26 12:34:26.882 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'CHARACTERIZE (1)'
+
+Caused by:
+  Process `CHARACTERIZE (1)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  mkdir -p out
+  python /app/scripts/statistical_heat_stress_characterization.py --input daily_WBGT_THI_stats.csv --outdir out
+  mv out/summary_exposure_statistics.csv summary_exposure_statistics.csv
+  mv out/categorized_daily.csv categorized_daily.csv
+  mkdir -p plots
+  mv out/plots/* plots/ || true
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Traceback (most recent call last):
+    File "/app/scripts/statistical_heat_stress_characterization.py", line 19, in <module>
+      import matplotlib.pyplot as plt
+  ModuleNotFoundError: No module named 'matplotlib'
+
+Work dir:
+  /mnt/c/Users/user/containerisation/work/4b/218c615a18f754dd9555ecc4098cb8
+
+Container:
+  heatstress:latest
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Nov-26 12:34:26.892 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-26 12:34:26.897 [TaskFinalizer-2] DEBUG nextflow.Session - Session aborted -- Cause: Process `CHARACTERIZE (1)` terminated with an error exit status (1)
+Nov-26 12:34:26.941 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Nov-26 12:34:26.946 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-26 12:34:26.952 [TaskFinalizer-2] WARN  nextflow.util.SimpleAgent - Got an interrupted exception while taking agent result | java.lang.InterruptedException
+Nov-26 12:34:26.964 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.9s; failedDuration=1.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=2 GB; ]
+Nov-26 12:34:26.967 [TaskFinalizer-2] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.9s; failedDuration=1.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=2 GB; ]
+Nov-26 12:34:27.136 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-26 12:34:27.209 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

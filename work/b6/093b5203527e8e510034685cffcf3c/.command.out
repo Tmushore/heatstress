@@ -1,0 +1,7 @@
+SUCCESS: categorized CSV saved → out/categorized_daily.csv
+SUCCESS: summary saved → out/summary_exposure_statistics.csv
+Saved plot → out/plots/wbgtout_mean.png
+Saved plot → out/plots/wbgtin_mean.png
+Saved plot → out/plots/thi_mean.png
+Saved plot → out/plots/wbgtout_threshold_exceedance_count.png
+All outputs written to: out

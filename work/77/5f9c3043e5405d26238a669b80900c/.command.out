@@ -1,0 +1,2 @@
+WARNING: 5150 rows have invalid datetimes and will be dropped.
+SUCCESS: daily stats written to: tmp_out/daily_WBGT_THI_stats.csv

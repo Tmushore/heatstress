@@ -1,0 +1,11 @@
+mkdir -p failed for path /.config/matplotlib: [Errno 13] Permission denied: '/.config'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-6287ek2w because there was an issue with the default path (/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+SUCCESS: categorized daily CSV saved → out/categorized_daily.csv
+SUCCESS: summary saved → out/summary_exposure_statistics.csv
+Saved plot → out/plots/wbgtout_mean.png
+Saved plot → out/plots/wbgtin_mean.png
+Saved plot → out/plots/thi_mean.png
+Saved plot → out/plots/thi_category_counts.png
+Saved plot → out/plots/wbgtout_category_counts.png
+Saved plot → out/plots/wbgtin_category_counts.png
+All outputs written to: out
